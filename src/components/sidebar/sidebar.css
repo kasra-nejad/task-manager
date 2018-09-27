@@ -1,0 +1,12 @@
+.sidebarContainer {
+  width: 90%;
+  height: 94%;
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  align-self: center;
+  justify-self: center;
+  align-content: space-evenly;
+  margin: 0 auto;
+  border: solid 1px #cccccc;
+  border-radius: 10px;
+  background-color: rgba(124, 124, 124, 0.411); }

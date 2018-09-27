@@ -1,0 +1,9 @@
+.App {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  grid-row: 1/-1;
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+  background-position: center;
+}

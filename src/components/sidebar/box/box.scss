@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+.box {
+  width: 77%;
+  display: grid;
+  justify-self: center;
+  border: solid 3px rgb(193, 206, 181);
+  border-radius: 6px;
+  background-color: rgba(167, 199, 136, 0.747);
+
+  .label {
+    justify-self: center;
+    align-self: center;
+  }
+}

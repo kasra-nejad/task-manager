@@ -1,0 +1,15 @@
+.todos {
+  width: 90%;
+  height: 94%;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  margin: auto 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-self: center;
+  align-self: center;
+  border: solid 3px rgb(193, 206, 181);
+  border-radius: 6px;
+  background-color: rgba(167, 199, 136, 0.747);
+}

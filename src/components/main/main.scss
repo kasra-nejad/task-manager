@@ -1,0 +1,12 @@
+.main {
+  width: 96%;
+  height: 94%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.17fr 2.35fr 2fr;
+  justify-self: center;
+  align-self: center;
+  border: solid 1px #cccccc;
+  border-radius: 10px;
+  background-color: rgba(124, 124, 124, 0.411);
+}
