@@ -1,13 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 
+import Days from "./days/days";
 import "./weather.css";
 
-class Weather extends Component {
-  state = {};
-
-  render() {
-    return <div className="weather" />;
-  }
-}
+const Weather = () => {
+  return (
+    <div className="weather">
+      <Days />
+    </div>
+  );
+};
 
 export default Weather;

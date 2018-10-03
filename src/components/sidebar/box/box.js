@@ -20,7 +20,7 @@ class Box extends Component {
         style={isOpen ? { height: "220px" } : { height: "50px" }}
       >
         <div
-          class="label"
+          className="label"
           style={isOpen ? { display: "none" } : { display: "block" }}
         >
           {content}
