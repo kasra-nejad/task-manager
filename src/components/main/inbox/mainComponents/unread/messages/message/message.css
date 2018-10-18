@@ -1,0 +1,53 @@
+.message {
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+  font-family: "Niramit", Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: #0e0e0c;
+  border-bottom: solid 2px #ccc;
+  overflow: hidden; }
+  .message__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #ccc;
+    background-color: #3a5a16; }
+    .message__header__info {
+      margin-left: 0.25rem; }
+    .message__header__actions {
+      display: flex;
+      justify-content: flex-end; }
+      .message__header__actions * {
+        font-size: 0.85rem;
+        color: #ccc;
+        background-color: #3a5a16;
+        border: none;
+        cursor: pointer; }
+  .message span {
+    font-weight: bold; }
+  .message__body {
+    display: grid;
+    grid-auto-flow: 1fr; }
+    .message__body__text {
+      padding: 0.25rem;
+      font-family: Helvetica, sans-serif;
+      font-size: 0.95rem; }
+    .message__body__replyText {
+      display: none;
+      position: relative; }
+      .message__body__replyText textarea {
+        resize: none;
+        background-color: #ecf2e7;
+        border: none; }
+      .message__body__replyText .send {
+        width: 4rem;
+        height: 2rem;
+        justify-self: end;
+        position: absolute;
+        bottom: 0.25rem;
+        right: 0.25rem;
+        color: #115300;
+        font-weight: 600;
+        background-color: #c6c0c0;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer; }

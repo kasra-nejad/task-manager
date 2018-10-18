@@ -1,0 +1,14 @@
+.calendarMonths {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 3rem;
+  font-family: "Niramit", Helvetica, sans-serif;
+  color: #115300;
+  border: solid 1px #ccc;
+  border-left: none;
+  border-top: none;
+  border-top-left-radius: 1.5%;
+  border-top-right-radius: 1.5%; }

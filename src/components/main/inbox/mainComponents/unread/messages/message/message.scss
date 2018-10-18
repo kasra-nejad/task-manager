@@ -1,0 +1,69 @@
+.message {
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+  font-family: "Niramit", Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: #0e0e0c;
+  border-bottom: solid 2px #ccc;
+  overflow: hidden;
+
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #ccc;
+    background-color: #3a5a16;
+
+    &__info {
+      margin-left: 0.25rem;
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: flex-end;
+      * {
+        font-size: 0.85rem;
+        color: #ccc;
+        background-color: #3a5a16;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  span {
+    font-weight: bold;
+  }
+  &__body {
+    display: grid;
+    grid-auto-flow: 1fr;
+    &__text {
+      padding: 0.25rem;
+      font-family: Helvetica, sans-serif;
+      font-size: 0.95rem;
+    }
+
+    &__replyText {
+      display: none;
+      position: relative;
+
+      textarea {
+        resize: none;
+        background-color: #ecf2e7;
+        border: none;
+      }
+      .send {
+        width: 4rem;
+        height: 2rem;
+        justify-self: end;
+        position: absolute;
+        bottom: 0.25rem;
+        right: 0.25rem;
+        color: rgb(17, 83, 0);
+        font-weight: 600;
+        background-color: #c6c0c0;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+    }
+  }
+}

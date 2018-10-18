@@ -1,0 +1,11 @@
+.calendar {
+  width: 90%;
+  height: 90%;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  background-color: #9fc177;
+  border: solid 3px rgb(193, 206, 181);
+  border-radius: 1.5%;
+}

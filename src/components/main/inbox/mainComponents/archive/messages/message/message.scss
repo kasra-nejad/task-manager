@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Niramit");
+.message {
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+  font-family: "Niramit", Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: #0e0e0c;
+  border-bottom: solid 2px #ccc;
+  overflow: hidden;
+
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #ccc;
+    background-color: #3a5a16;
+
+    &__info {
+      margin-left: 0.25rem;
+    }
+  }
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    * {
+      font-size: 0.85rem;
+      color: #ccc;
+      background-color: #3a5a16;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  span {
+    font-weight: bold;
+  }
+  &__body {
+    padding: 0.25rem;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.95rem;
+    border-top: double 3px #337323;
+    border-radius: 2px;
+  }
+}

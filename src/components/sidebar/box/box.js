@@ -1,31 +1,31 @@
 import React, { Component } from "react";
-import Avatar from "./avatar/avatar";
 
 import "./box.css";
 
 class Box extends Component {
-  state = {
-    isOpen: this.props.isOpen
+  handleActivate = () => {
+    this.props.activateBox(this.props.id);
   };
 
   render() {
-    const isOpen = this.state.isOpen;
-    const id = this.props.id;
-    const content = this.props.content;
+    const { props } = this;
+    const isActive = this.props.isActive;
 
     return (
       <div
-        id={id}
+        id={props.id}
+        key={props.key}
         className="box"
-        style={isOpen ? { height: "220px" } : { height: "50px" }}
+        style={
+          isActive
+            ? { backgroundColor: "rgba(32, 65, 0, 0.747)", color: "#ccc" }
+            : {}
+        }
+        onClick={this.handleActivate}
       >
-        <div
-          className="label"
-          style={isOpen ? { display: "none" } : { display: "block" }}
-        >
-          {content}
+        <div className="label" style={isActive ? { color: "#ccc" } : {}}>
+          {props.content}
         </div>
-        <Avatar isOpen={isOpen} content={content} />
       </div>
     );
   }

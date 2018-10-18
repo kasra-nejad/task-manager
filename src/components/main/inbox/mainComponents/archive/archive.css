@@ -1,0 +1,7 @@
+.archive {
+  width: 95%;
+  height: 90%;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  border: solid 2px #ccc; }

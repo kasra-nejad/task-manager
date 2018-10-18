@@ -1,0 +1,20 @@
+.currency {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 2fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border: solid 1px #ccc;
+  &__type {
+    align-self: end;
+    color: #f5f1f1;
+    text-shadow: 0px 0px 2px #000000ad;
+    font-size: 1.25rem;
+    font-family: "Graduate", "Arial Black", cursive, sans-serif;
+  }
+  &__value {
+    align-self: center;
+  }
+}

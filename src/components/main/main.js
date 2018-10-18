@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 
-import Todos from "./todos/todos";
-import Weather from "./weather/weather";
-import Currencies from "./currencies/currencies";
+import Home from "./home/home";
+import Inbox from "./inbox/inbox";
+import Calendar from "./calendar/calendar";
+
 import "./main.css";
 
 class Main extends Component {
@@ -11,9 +12,9 @@ class Main extends Component {
   render() {
     return (
       <div className="main">
-        <Todos />
-        <Weather />
-        <Currencies />
+        {/* <Home /> */}
+        {/* <Inbox /> */}
+        <Calendar />
       </div>
     );
   }

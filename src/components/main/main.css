@@ -3,8 +3,6 @@
   width: 96%;
   height: 94vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2.36fr 2fr;
   justify-self: center;
   align-self: center;
   border: solid 1px #cccccc;
