@@ -1,0 +1,40 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  border-bottom: solid 2px #ccc;
+  align-items: center;
+  font-family: "Niramit", Helvetica, sans-serif;
+  > div {
+    margin: 0.5rem;
+    padding-left: 0.25rem;
+    border: solid 1px #1d3900;
+    > input {
+      background-color: #9fc177;
+      border: none;
+    }
+  }
+  .deleteContact {
+    width: 15%;
+    justify-self: end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #9fc177;
+    border: none;
+    cursor: pointer;
+    :hover {
+      border: solid 1px #ccc;
+    }
+  }
+  .name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .phoneNumber {
+    grid-row: 2/3;
+  }
+
+  .email {
+    grid-row: 3/4;
+  }
+}

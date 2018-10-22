@@ -1,6 +1,15 @@
-.calendarDays {
+.displayedDays {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  flex-direction: row;
   justify-items: center;
   align-items: center; }
+  .displayedDays .row {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex; }
+    .displayedDays .row > div {
+      flex: 1;
+      height: 100%; }
+  .displayedDays .inactive {
+    color: #7e7e7e; }

@@ -1,9 +1,9 @@
 .calendarMonths {
   width: 100%;
   height: 100%;
-  display: grid;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: space-between;
   font-size: 3rem;
   font-family: "Niramit", Helvetica, sans-serif;
   color: rgb(17, 83, 0);
@@ -12,4 +12,23 @@
   border-top: none;
   border-top-left-radius: 1.5%;
   border-top-right-radius: 1.5%;
+  > div {
+    text-align: center;
+    text-decoration: none;
+    &::selection {
+      background: none;
+    }
+  }
+
+  &__prevMonth {
+    margin-left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  &__nextMonth {
+    margin-right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
 }

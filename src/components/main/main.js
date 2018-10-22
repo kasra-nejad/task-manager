@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Home from "./home/home";
 import Inbox from "./inbox/inbox";
 import Calendar from "./calendar/calendar";
+import Contacts from "./contacts/contacts";
 
 import "./main.css";
 
@@ -14,7 +15,8 @@ class Main extends Component {
       <div className="main">
         {/* <Home /> */}
         {/* <Inbox /> */}
-        <Calendar />
+        {/* <Calendar /> */}
+        <Contacts />
       </div>
     );
   }
