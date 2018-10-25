@@ -1,5 +1,5 @@
 {
-  "homepage": "http://kasra-nejad.github.io/task-manager",
+  "homepage": "https://kasra-nejad.github.io/task-manager",
   "name": "task_manager",
   "version": "0.1.0",
   "private": true,
@@ -26,5 +26,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
