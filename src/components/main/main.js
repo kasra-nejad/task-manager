@@ -13,9 +13,9 @@ class Main extends Component {
   render() {
     return (
       <div className="main">
-        {/* <Home /> */}
-        {/* <Inbox /> */}
-        {/* <Calendar /> */}
+        <Home />
+        <Inbox />
+        <Calendar />
         <Contacts />
       </div>
     );

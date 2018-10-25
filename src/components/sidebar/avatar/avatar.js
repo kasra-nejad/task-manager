@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 import Picture from "../../../images/cat.jpg";
 import "./avatar.css";
@@ -8,9 +9,9 @@ class Avatar extends Component {
     weather: ""
   };
 
-  // componentDidMount() {
-  //   this.fetchWeather();
-  // }
+  componentDidMount() {
+    this.fetchWeather();
+  }
 
   fetchWeather = () => {
     const url =
@@ -48,25 +49,27 @@ class Avatar extends Component {
     const { temp } = this.state;
     const { active } = this.props;
     return (
-      <div
-        className="avatar"
-        style={active ? { backgroundColor: "rgba(32, 65, 0, 0.747)" } : {}}
-        onClick={this.handleActivate}
-      >
-        <div className="avatar__picture">
-          <img src={Picture} alt="profile pictures" />
+      <NavLink to="/">
+        <div
+          className="avatar"
+          style={active ? { backgroundColor: "rgba(32, 65, 0, 0.747)" } : {}}
+          onClick={this.handleActivate}
+        >
+          <div className="avatar__picture">
+            <img src={Picture} alt="profile pictures" />
+          </div>
+          <h4 className="avatar__username">Jamie Rockton</h4>
+          <div className="avatar__info">
+            <p className="avatar__info__location">
+              <span>&#9899;</span> London
+            </p>
+            <p className="avatar__info__weather">
+              {temp}
+              &#176;
+            </p>
+          </div>
         </div>
-        <h4 className="avatar__username">Jamie Rockton</h4>
-        <div className="avatar__info">
-          <p className="avatar__info__location">
-            <span>&#9899;</span> London
-          </p>
-          <p className="avatar__info__weather">
-            {temp}
-            &#176;
-          </p>
-        </div>
-      </div>
+      </NavLink>
     );
   }
 }

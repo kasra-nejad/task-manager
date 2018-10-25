@@ -10,3 +10,7 @@
   border: solid 1px #cccccc;
   border-radius: 10px;
   background-color: rgba(124, 124, 124, 0.411); }
+  .sidebarContainer > a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none; }

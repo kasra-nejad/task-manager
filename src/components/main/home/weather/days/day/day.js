@@ -1,11 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
 import "./day.css";
 
-class Day extends Component {
-  state = {};
-
-  setWeather = weather => {
+const Day = props => {
+  const setWeather = weather => {
     switch (weather) {
       case "Clear":
         return <i class="far fa-sun" style={{ color: "#fffa13" }} />;
@@ -20,24 +18,19 @@ class Day extends Component {
     }
   };
 
-  render() {
-    const { props } = this;
-    return (
-      <div className="day">
-        <div className="day__date">
-          {props.date}
-          hr
-        </div>
-        <div className="day__temp">
-          {props.dayTemp}
-          &#176;
-        </div>
-        <div className="day__weatherSymbol">
-          {this.setWeather(props.weather)}
-        </div>
+  return (
+    <div className="day">
+      <div className="day__date">
+        {props.date}
+        hr
       </div>
-    );
-  }
-}
+      <div className="day__temp">
+        {props.dayTemp}
+        &#176;
+      </div>
+      <div className="day__weatherSymbol">{setWeather(props.weather)}</div>
+    </div>
+  );
+};
 
 export default Day;

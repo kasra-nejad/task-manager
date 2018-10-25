@@ -1,18 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Messages from "./messages/messages";
 import "./archive.css";
 
-class Archive extends Component {
-  state = {};
-
-  render() {
-    return (
-      <div className="archive">
-        <Messages />
-      </div>
-    );
-  }
-}
+const Archive = props => {
+  return (
+    <div className="archive">
+      <Messages />
+    </div>
+  );
+};
 
 export default Archive;

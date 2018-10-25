@@ -1,18 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Messages from "./messages/messages";
 import "./sent.css";
 
-class Sent extends Component {
-  state = {};
-
-  render() {
-    return (
-      <div className="sent">
-        <Messages />
-      </div>
-    );
-  }
-}
+const Sent = props => {
+  return (
+    <div className="sent">
+      <Messages />
+    </div>
+  );
+};
 
 export default Sent;

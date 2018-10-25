@@ -18,7 +18,8 @@ class Task extends Component {
       <textarea
         className="hour__task"
         name="task"
-        value={this.state.task}
+        task={this.state.task}
+        placeholder="Type your task here"
         onChange={this.handleChange}
       />
     );

@@ -6,7 +6,7 @@ import "./hour.css";
 
 class Hour extends Component {
   state = {
-    tasks: [{ id: uuid(), task: "sssss" }],
+    tasks: [{ id: uuid(), task: "" }],
     expanded: false
   };
 
@@ -20,7 +20,7 @@ class Hour extends Component {
     const { tasks } = this.state;
 
     const newTasks = tasks.concat({ id: uuid(), task: "sssss" });
-    console.log(newTasks);
+
     this.setState({
       tasks: newTasks
     });
@@ -52,7 +52,7 @@ class Hour extends Component {
       >
         <div className="hour__time">{props.time}</div>
         <button className="hour__expand" onClick={this.expandHour}>
-          {expanded ? "Minimize" : "Expanded"}
+          {expanded ? "Minimize" : "Expand"}
         </button>
         <div className="hour__tasks">
           {displayedTasks}

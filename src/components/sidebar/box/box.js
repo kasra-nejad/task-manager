@@ -1,17 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 import "./box.css";
 
-class Box extends Component {
-  handleActivate = () => {
-    this.props.activateBox(this.props.id);
+const Box = props => {
+  const handleActivate = () => {
+    props.activateBox(props.id);
   };
 
-  render() {
-    const { props } = this;
-    const isActive = this.props.isActive;
+  const isActive = props.isActive;
 
-    return (
+  return (
+    <NavLink to={`/${props.content}`}>
       <div
         id={props.id}
         key={props.key}
@@ -21,14 +21,14 @@ class Box extends Component {
             ? { backgroundColor: "rgba(32, 65, 0, 0.747)", color: "#ccc" }
             : {}
         }
-        onClick={this.handleActivate}
+        onClick={handleActivate}
       >
         <div className="label" style={isActive ? { color: "#ccc" } : {}}>
           {props.content}
         </div>
       </div>
-    );
-  }
-}
+    </NavLink>
+  );
+};
 
 export default Box;

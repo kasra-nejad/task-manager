@@ -1,0 +1,12 @@
+.noMatch {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.error {
+  padding: 3rem;
+  font-size: 4rem;
+  font-weight: 600;
+  background-color: azure;
+  border: solid 2px #ccc;
+}

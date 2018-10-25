@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import "./tab.css";
 
@@ -7,13 +8,15 @@ const Tab = props => {
     props.activate(props.id);
   };
   return (
-    <div
-      className="tab"
-      style={props.isActive ? { boxShadow: "0px -2px 2px #444040" } : {}}
+    <NavLink
+      to={`/inbox/${props.content}`}
       onClick={this.handleActivate}
+      style={props.isActive ? { boxShadow: "0px -2px 2px #444040" } : {}}
     >
-      <div className="tabLabel">{props.content}</div>
-    </div>
+      <div className="tab">
+        <div className="tabLabel">{props.content}</div>
+      </div>
+    </NavLink>
   );
 };
 
