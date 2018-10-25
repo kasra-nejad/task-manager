@@ -12,10 +12,20 @@ const Inbox = props => {
     <div className="inbox">
       <Tabs />
       <Switch>
-        <Route path={"/inbox/"} component={Unread} exact />
-        <Route path={"/inbox/unread"} component={Unread} />
-        <Route path={"/inbox/sent"} component={Sent} />
-        <Route path={"/inbox/archive"} component={Archive} />
+        <Route
+          path={process.env.PUBLIC_URL + "/inbox/"}
+          component={Unread}
+          exact
+        />
+        <Route
+          path={process.env.PUBLIC_URL + "/inbox/unread"}
+          component={Unread}
+        />
+        <Route path={process.env.PUBLIC_URL + "/inbox/sent"} component={Sent} />
+        <Route
+          path={process.env.PUBLIC_URL + "/inbox/archive"}
+          component={Archive}
+        />
       </Switch>
     </div>
   );

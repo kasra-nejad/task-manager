@@ -9,7 +9,7 @@ const Tab = props => {
   };
   return (
     <NavLink
-      to={`/inbox/${props.content}`}
+      to={process.env.PUBLIC_URL + `/inbox/${props.content}`}
       onClick={this.handleActivate}
       style={props.isActive ? { boxShadow: "0px -2px 2px #444040" } : {}}
     >

@@ -24,7 +24,7 @@ class Currencies extends Component {
     currencies.forEach(currency => {
       let url;
       currencyCode = currency.type;
-      url = `http://free.currencyconverterapi.com/api/v5/convert?q=${currencyCode}_GBP&compact=y`;
+      url = `https://free.currencyconverterapi.com/api/v5/convert?q=${currencyCode}_GBP&compact=y`;
       this.fetchCurrencies(url, currencyCode);
     });
   };

@@ -15,7 +15,7 @@ class Avatar extends Component {
 
   fetchWeather = () => {
     const url =
-      "http://api.openweathermap.org/data/2.5/find?q=London&units=metric&appid=37b3bd6754246ed9f8c27d7b9ab81a8e";
+      "https://api.openweathermap.org/data/2.5/find?q=London&units=metric&appid=xxx-xxx-xxxx";
     fetch(url)
       .then(function(response) {
         if (response.status !== 200) {
@@ -49,7 +49,7 @@ class Avatar extends Component {
     const { temp } = this.state;
     const { active } = this.props;
     return (
-      <NavLink to="/">
+      <NavLink to={process.env.PUBLIC_URL + "/"}>
         <div
           className="avatar"
           style={active ? { backgroundColor: "rgba(32, 65, 0, 0.747)" } : {}}

@@ -20,10 +20,16 @@ class App extends Component {
         <div className="app" style={{ backgroundImage: `url(${Background})` }}>
           <Sidebar />
           <Switch className="main">
-            <Route path={"/"} component={Home} exact />
-            <Route path={"/inbox"} component={Inbox} />
-            <Route path={"/calendar"} component={Calendar} />
-            <Route path={"/Contacts"} component={Contacts} />
+            <Route path={process.env.PUBLIC_URL + "/"} component={Home} exact />
+            <Route path={process.env.PUBLIC_URL + "/inbox"} component={Inbox} />
+            <Route
+              path={process.env.PUBLIC_URL + "/calendar"}
+              component={Calendar}
+            />
+            <Route
+              path={process.env.PUBLIC_URL + "/Contacts"}
+              component={Contacts}
+            />
             <Route component={NoMatch} />
           </Switch>
         </div>

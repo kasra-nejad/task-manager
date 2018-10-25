@@ -15,7 +15,7 @@ class Days extends Component {
 
   fetchWeather = () => {
     const url =
-      "http://api.openweathermap.org/data/2.5/forecast?q=london&units=metric&APPID=37b3bd6754246ed9f8c27d7b9ab81a8e";
+      "https://api.openweathermap.org/data/2.5/forecast?q=london&units=metric&APPID=37b3bd6754246ed9f8c27d7b9ab81a8e";
     fetch(url)
       .then(function(response) {
         if (response.status !== 200) {

@@ -11,7 +11,7 @@ const Box = props => {
   const isActive = props.isActive;
 
   return (
-    <NavLink to={`/${props.content}`}>
+    <NavLink to={process.env.PUBLIC_URL + `/${props.content}`}>
       <div
         id={props.id}
         key={props.key}

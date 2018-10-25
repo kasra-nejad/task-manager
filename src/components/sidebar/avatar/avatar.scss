@@ -27,6 +27,7 @@
     margin-top: 0.65rem;
     grid-row: 3/4;
     justify-self: center;
+    align-self: center;
     color: #f8f8f8;
     font-size: 1.1rem;
     font-family: Poppins, Verdana, sans-serif;
@@ -36,8 +37,8 @@
   &__info {
     display: flex;
     grid-row: 4/5;
+    align-items: center;
     color: #f8f8f8;
-
     font-size: 0.85rem;
     font-family: Oswald, Verdana, sans-serif;
 
