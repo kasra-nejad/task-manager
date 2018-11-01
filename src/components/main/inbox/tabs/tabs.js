@@ -8,6 +8,7 @@ class Tabs extends Component {
   state = {
     tabs: [
       { id: uuid(), content: "Unread", isActive: true },
+      { id: uuid(), content: "Compose", isActive: false },
       { id: uuid(), content: "Sent", isActive: false },
       { id: uuid(), content: "Archive", isActive: false }
     ]

@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Tabs from "./tabs/tabs";
 import Unread from "./mainComponents/unread/unread";
+import Compose from "./mainComponents/compose/compose";
 import Sent from "./mainComponents/sent/sent";
 import Archive from "./mainComponents/archive/archive";
 import "./inbox.css";
@@ -20,6 +21,10 @@ const Inbox = props => {
         <Route
           path={process.env.PUBLIC_URL + "/inbox/unread"}
           component={Unread}
+        />
+        <Route
+          path={process.env.PUBLIC_URL + "/inbox/compose"}
+          component={Compose}
         />
         <Route path={process.env.PUBLIC_URL + "/inbox/sent"} component={Sent} />
         <Route
