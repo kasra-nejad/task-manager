@@ -5,7 +5,14 @@ import "./message.css";
 class Message extends Component {
   state = {
     expanded: false,
-    reply: false
+    reply: false,
+    value: ""
+  };
+
+  componentWillMount() {}
+
+  handleChange = e => {
+    this.setState({ value: e.target.value });
   };
 
   expandMessage = () => {
@@ -26,6 +33,11 @@ class Message extends Component {
     this.setState({
       reply: true
     });
+  };
+
+  sendReply = e => {
+    e.preventDefault();
+    this.setState({ expanded: false, reply: false, value: "" });
   };
 
   handleArchiveMessage = () => {
@@ -80,8 +92,16 @@ class Message extends Component {
             className="message__body__replyText"
             style={state.reply ? { display: "grid" } : {}}
           >
-            <textarea />
-            <button className="send">Send</button>
+            <form action="" method="post">
+              <textarea
+                name="replyMessage"
+                onChange={this.handleChange}
+                value={state.value}
+              />
+              <button type="submit" className="send" onClick={this.sendReply}>
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>

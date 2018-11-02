@@ -45,26 +45,32 @@
       }
     }
 
-    &__message {
+    &__form {
       width: 100%;
       height: 95%;
-      align-self: center;
-      border: none;
-      resize: none;
-    }
-    &__send {
-      width: 4rem;
-      height: 2rem;
-      justify-self: end;
-      position: absolute;
-      bottom: 0.25rem;
-      right: 0.25rem;
-      color: rgb(17, 83, 0);
-      font-weight: 600;
-      background-color: #c6c0c0;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
+      &__message {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        align-self: center;
+        border: none;
+        resize: none;
+      }
+      &__send {
+        width: 4rem;
+        height: 2rem;
+        justify-self: end;
+        position: absolute;
+        bottom: 0.25rem;
+        right: 0.25rem;
+        color: rgb(17, 83, 0);
+        font-weight: 600;
+        background-color: #c6c0c0;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+      }
     }
   }
   &__sent {

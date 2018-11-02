@@ -5,7 +5,21 @@ import "./compose.css";
 class Compose extends Component {
   state = {
     messageOpen: false,
-    messageSent: false
+    messageSent: false,
+    inputValue: "",
+    textValue: ""
+  };
+
+  handleInput = e => {
+    this.setState({
+      inputValue: e.target.value
+    });
+  };
+
+  handleText = e => {
+    this.setState({
+      textValue: e.target.value
+    });
   };
 
   openMessage = () => {
@@ -15,10 +29,13 @@ class Compose extends Component {
     });
   };
 
-  sendMessage = () => {
+  sendMessage = e => {
+    e.preventDefault();
     this.setState({
       messageOpen: false,
-      messageSent: true
+      messageSent: true,
+      inputValue: "",
+      textValue: ""
     });
   };
 
@@ -37,18 +54,28 @@ class Compose extends Component {
         >
           <div className="compose__messageBody__recipient">
             <span className="recipient__text">Recipient:</span>
-            <input className="recipient__input" maxlength="50" />
+            <input
+              className="recipient__input"
+              onChange={this.handleInput}
+              value={state.inputValue}
+              maxlength="50"
+            />
           </div>
-          <textarea
-            className="compose__messageBody__message"
-            maxlength="2000"
-          />
-          <button
-            className="compose__messageBody__send"
-            onClick={this.sendMessage}
-          >
-            Send
-          </button>
+          <form action="" method="post" className="compose__messageBody__form">
+            <textarea
+              className="compose__messageBody__form__message"
+              onChange={this.handleText}
+              value={state.textValue}
+              maxlength="2000"
+            />
+            <button
+              type="submit"
+              className="compose__messageBody__form__send"
+              onClick={this.sendMessage}
+            >
+              Send
+            </button>
+          </form>
         </div>
         <p
           className="compose__sent"

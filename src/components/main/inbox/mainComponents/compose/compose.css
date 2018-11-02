@@ -38,25 +38,30 @@
         font-size: 1.1rem;
         background-color: #cad8bb;
         border: none; }
-    .compose__messageBody__message {
+    .compose__messageBody__form {
       width: 100%;
-      height: 95%;
-      align-self: center;
-      border: none;
-      resize: none; }
-    .compose__messageBody__send {
-      width: 4rem;
-      height: 2rem;
-      justify-self: end;
-      position: absolute;
-      bottom: 0.25rem;
-      right: 0.25rem;
-      color: #115300;
-      font-weight: 600;
-      background-color: #c6c0c0;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer; }
+      height: 95%; }
+      .compose__messageBody__form__message {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        align-self: center;
+        border: none;
+        resize: none; }
+      .compose__messageBody__form__send {
+        width: 4rem;
+        height: 2rem;
+        justify-self: end;
+        position: absolute;
+        bottom: 0.25rem;
+        right: 0.25rem;
+        color: #115300;
+        font-weight: 600;
+        background-color: #c6c0c0;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer; }
   .compose__sent {
     display: none;
     align-self: center;
