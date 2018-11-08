@@ -40,3 +40,16 @@
     border-radius: 2px;
   }
 }
+
+@media only screen and (max-width: 460px) {
+  .message {
+    grid-template-rows: 4.25rem;
+    &__header {
+      grid-template-rows: 1fr 1fr;
+      font-size: 0.8rem;
+      &__actions > * {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

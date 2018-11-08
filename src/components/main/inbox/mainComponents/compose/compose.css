@@ -1,5 +1,5 @@
 .compose {
-  width: 95%;
+  width: 96%;
   height: 90%;
   display: grid;
   grid-template-rows: 1fr 9fr;
@@ -66,3 +66,7 @@
     display: none;
     align-self: center;
     justify-self: center; }
+
+@media (max-width: 460px) {
+  .compose__messageBody__recipient {
+    flex-direction: column; } }

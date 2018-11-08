@@ -10,3 +10,12 @@
   border-top-right-radius: 1.5%;
   border-top-left-radius: 1.5%;
   background-image: linear-gradient(to bottom, #9fc1771c 3%, #9fc177 14%, #9fc177 74%, #9fc177 74%); }
+
+@media (max-width: 768px) {
+  .inbox {
+    grid-template-rows: 1fr 375px; } }
+
+@media (max-width: 460px) {
+  .inbox {
+    grid-template-rows: 60px;
+    position: relative; } }

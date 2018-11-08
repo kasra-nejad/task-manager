@@ -15,7 +15,7 @@ class Avatar extends Component {
 
   fetchWeather = () => {
     const url =
-      "https://api.openweathermap.org/data/2.5/find?q=London&units=metric&appid=xxx-xxx-xxxx";
+      "https://api.openweathermap.org/data/2.5/find?q=London&units=metric&appid=";
     fetch(url)
       .then(function(response) {
         if (response.status !== 200) {

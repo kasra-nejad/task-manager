@@ -18,3 +18,9 @@
     font-size: 2rem;
   }
 }
+
+@media (max-width: 460px) {
+  .day__weatherSymbol {
+    font-size: 1.25rem;
+  }
+}

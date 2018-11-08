@@ -32,3 +32,19 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 460px) {
+  .calendarMonths {
+    font-size: 2rem;
+
+    &__prevMonth {
+      margin-left: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    &__nextMonth {
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}

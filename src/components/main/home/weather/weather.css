@@ -8,3 +8,7 @@
   border: solid 3px #c1ceb5;
   border-radius: 6px;
   background-color: rgba(167, 199, 136, 0.747); }
+
+@media (max-width: 460px) {
+  .weather {
+    grid-column: 1/-1; } }

@@ -6,3 +6,7 @@
   align-items: center;
   font-size: 1.25rem;
   color: rgba(19, 20, 15, 0.95); }
+
+@media (max-width: 460px) {
+  .calendarDate {
+    font-size: 1rem; } }

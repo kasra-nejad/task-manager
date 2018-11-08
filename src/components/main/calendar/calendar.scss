@@ -9,3 +9,9 @@
   border: solid 3px rgb(193, 206, 181);
   border-radius: 1.5%;
 }
+
+@media (max-width: 460px) {
+  .calendar {
+    grid-template-rows: 1fr 2fr;
+  }
+}

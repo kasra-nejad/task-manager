@@ -12,3 +12,19 @@
   border-radius: 6px;
   background-color: rgba(167, 199, 136, 0.747);
 }
+
+@media (max-width: 460px) {
+  .currencies {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: baseline;
+    height: 90%;
+  }
+}
+
+@media (max-width: 374px) {
+  .currencies {
+    align-self: baseline;
+    height: 93%;
+  }
+}

@@ -5,3 +5,21 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2.36fr 2fr;
 }
+@media (max-width: 768px) {
+  .home {
+    grid-template-rows: 2.5fr 2fr;
+  }
+}
+
+@media (max-width: 460px) {
+  .home {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 374px) {
+  .home {
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  }
+}

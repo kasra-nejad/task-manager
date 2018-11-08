@@ -58,3 +58,13 @@
     border: solid 2px rgb(203, 255, 43);
   }
 }
+
+@media (max-width: 460px) {
+  .hour {
+    grid-template-columns: 1fr;
+
+    &__tasks {
+      grid-template-columns: 1fr;
+    }
+  }
+}

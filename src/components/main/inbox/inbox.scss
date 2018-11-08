@@ -17,3 +17,14 @@
     #9fc177 74%
   );
 }
+@media (max-width: 768px) {
+  .inbox {
+    grid-template-rows: 1fr 375px;
+  }
+}
+@media (max-width: 460px) {
+  .inbox {
+    grid-template-rows: 60px;
+    position: relative;
+  }
+}

@@ -58,3 +58,21 @@
         border: none;
         border-radius: 2px;
         cursor: pointer; }
+
+@media only screen and (max-width: 460px) {
+  .message {
+    grid-template-rows: 4.25rem; }
+    .message__header {
+      grid-template-rows: 1fr 1fr;
+      font-size: 0.8rem; }
+      .message__header__info {
+        display: flex;
+        grid-column: 1/-1; }
+        .message__header__info > * {
+          flex: 1; }
+      .message__header__actions {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        justify-content: space-evenly; }
+        .message__header__actions > * {
+          font-size: 0.8rem; } }

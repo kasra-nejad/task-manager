@@ -1,8 +1,16 @@
 .sent {
-  width: 95%;
+  width: 96%;
   height: 90%;
   display: grid;
   align-self: center;
   justify-self: center;
   border: solid 2px #ccc;
+}
+
+@media (max-width: 460px) {
+  .sent {
+    height: 82%;
+    position: absolute;
+    align-self: end;
+  }
 }

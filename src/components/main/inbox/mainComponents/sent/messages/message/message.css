@@ -31,3 +31,12 @@
     font-size: 0.95rem;
     border-top: double 3px #337323;
     border-radius: 2px; }
+
+@media only screen and (max-width: 460px) {
+  .message {
+    grid-template-rows: 4.25rem; }
+    .message__header {
+      grid-template-rows: 1fr 1fr;
+      font-size: 0.8rem; }
+      .message__header__actions > * {
+        font-size: 0.8rem; } }

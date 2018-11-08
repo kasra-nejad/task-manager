@@ -10,3 +10,23 @@
   border-radius: 6px;
   background-color: rgba(167, 199, 136, 0.747);
 }
+
+@media (max-width: 768px) {
+  .todos {
+    height: 240px;
+  }
+}
+
+@media (max-width: 460px) {
+  .todos {
+    height: 250px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 374px) {
+  .todos {
+    height: 200px;
+    margin-top: 0.5rem;
+  }
+}
